@@ -1,0 +1,33 @@
+print('proptutor')
+
+-- 1) создание простое
+--[[ 
+	if !IsValid(cube) then --IsValid=является, !=НЕ
+		cube = ents.Create("prop_dynamic")
+		cube:SetModel("models/hunter/blocks/cube8x8x8.mdl")
+		cube:SetPos(Vector(151.531815, -2127, -10176))
+		cube:SetAngles(Angle(0, 0, 0))
+		cube:ManipulateBoneScale(0, Vector(1, 1, 1))
+		cube:SetSolid(SOLID_VPHYSICS)
+		cube:Spawn()
+	end
+]]
+
+
+-- 2) создание через функцию
+--[[ cube = ents.Create("prop_dynamic")
+
+local function CreateProp(Cube)
+ cube:SetModel("models/hunter/blocks/cube8x8x8.mdl")
+ cube:SetPos(Vector(151.531815, -2127, -10176))
+ cube:SetAngles(Angle(0, 0, 0))   
+ cube:ManipulateBoneScale(0, Vector(1, 1, 1))
+ cube:SetSolid(SOLID_VPHYSICS)
+ cube:Spawn()
+end
+
+CreateProp(Cube)
+]] 
+
+
+print(cube)

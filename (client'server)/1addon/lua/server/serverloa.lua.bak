@@ -1,0 +1,10 @@
+print('serverloa')
+
+hook.Add('PlayerSay', 'playersayany'. function())
+
+end;
+
+function plysay()
+end;
+
+hook.Add('PlayerSay', 'playersayany'. plysay)
